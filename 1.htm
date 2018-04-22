@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>出错啦！</title>
+    <link rel="stylesheet" type="text/css" href="http://sxqh.chineseall.cn/assets/css/nqcx.min.css?t=20160819163705"/>
+    <link rel="stylesheet" type="text/css" href="/assets/css/nqcx-fonts.min.css?t=20160819163705">
+    <link rel="stylesheet" type="text/css" href="http://sxqh.chineseall.cn/assets/css/docs.min.css?t=20160819163705"/>
+    <link rel="stylesheet" type="text/css" href="http://sxqh.chineseall.cn/assets/css/msg.min.css?t=20160819163705"/>
+</head>
+<body>
+<div class="container">
+                <div class="bs-callout bs-callout-error">
+        <ul class="msg-list">
+            <li class="msg">
+                <div class="msg-left">
+                    <span class="msg-object msg-object-error glyphicon glyphicon-exclamation-sign"></span>
+                </div>
+                <div class="msg-body">
+                    <h4 class="msg-heading">很抱歉，没有找到您要访问的页面，请检查您是否输入正确URL！</h4>
+                                            <div class="msg">
+                            <div class="msg-body">
+                                                                    <h4>友情提示：</h4>
+                                                                <ul>
+                                                                            <li>如果您已经在地址栏中输入该网页的地址，请确认其拼写正确。</li>
+                                                                            <li>请确认你是否按正确的步骤进行操作。</li>
+                                                                            <li>如果多次出现此错误，请与管理员联系。</li>
+                                                                    </ul>
+                            </div>
+                        </div>
+                                        <div class="msg">
+                                                                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<script type="text/javascript">
+    var timer = document.getElementById("timer");
+    function countdown() {
+        if (!timer)
+            return;
+
+        var autoTime = timer.innerHTML;
+        if (autoTime > 0) {
+            autoTime--;
+            timer.innerHTML = autoTime;
+        }
+        setTimeout('countdown()', 1000)
+    }
+
+    window.onload = function () {
+        setTimeout('countdown()', 1000);
+    };
+</script>
+</body>
+</html>
